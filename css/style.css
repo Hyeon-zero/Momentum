@@ -34,7 +34,6 @@ body {
 
 .head-container .left {
   display: flex;
-  justify-content: baseline;
 }
 
 .class-links {
@@ -60,7 +59,6 @@ body {
 
 .weather-box {
   display: flex;
-  justify-content: baseline;
   color: #fff;
 }
 
@@ -68,7 +66,6 @@ body {
   display: flex;
   color: #fff;
   font-size: 1rem;
-  justify-content: baseline;
   cursor: pointer;
   padding-top: 0.4rem;
 }
@@ -76,7 +73,6 @@ body {
 .class-temp {
   margin-left: 0.6rem;
   font-size: 1.6rem;
-  justify-content: baseline;
 } 
 
 .class-location {
@@ -117,41 +113,28 @@ body {
 .class-comment {
   display: flex;
   justify-content: center;
-  align-items: center;  
-  white-space: pre-wrap;
+  align-items: center;
 }
 
 .class-name {
   color: #fff;
   font-size: 3.2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   white-space: pre;
 }
 
 /*  */
 .name-dot {
   display: flex;
-  white-space: pre-wrap;
 }
 
 .user-name {
   color: #fff;
   font-size: 3.2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  white-space: nowrap;
 }
 
 .class-dot {
   color: #fff;
   font-size: 3.2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  white-space: nowrap;
 }
 
 /* section(Input) */
@@ -175,8 +158,6 @@ body {
   margin: 0 auto;
   padding-top: 4px;
   display: flex;
-  justify-content: center;
-  align-items: center;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -190,24 +171,17 @@ body {
 .class-input-box {
   width: 100%;
   height: 17vh;
-  /* margin-top: 15rem; */
 }
 
 /* footer */
 .footer-container {
-  width: 100%;
-  justify-content: baseline;
-}
-
-.footer-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .class-footer {
-  display: flex;
-  justify-content: center;
+  display: flex;  
   align-items: center;
   width: 160px;
 }
@@ -220,20 +194,16 @@ body {
 }
 
 .class-photo-author {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-left: 0.5rem;
 }
 
 .photo-name {
   color: #fff;
-  font-size: 12px;
+  font-size: 13px;
   display: flex;
 }
 
 .articloid {
-  display: flex;
   justify-content: center;
   align-items: center;
   width: 1000px;
@@ -245,19 +215,21 @@ body {
 
 .sentence {
   color: #fff;
-  font-size: 16px;
-  padding-right: 6rem;
+  font-size: 16.3px;
   display: flex;
   justify-content: center;
   align-items: center;
   line-height: normal;
 }
 
+.to-do-list {
+  width: 160px;
+  text-align: right;
+}
+
 .todo {
   color: #fff;
   cursor: pointer;
-  justify-content: center;
-  align-items: center;
   font-size: 16px;
 }
 
