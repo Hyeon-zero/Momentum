@@ -55,6 +55,7 @@ body {
 
 .right {
   cursor: pointer;
+  margin-top: 1rem;
 }
 
 .weather-box {
@@ -107,6 +108,7 @@ body {
 .class-time {
   color: #fff;
   font-size: 150px;
+  font-weight: 400;
   padding-top: 1vh;
 }
 
@@ -187,7 +189,7 @@ body {
 }
 
 .class-gear {
-  color: 	#808080;
+  color: #808080;
   padding-bottom: 0.1rem;
   font-size: 1rem;
   cursor: pointer;
@@ -254,7 +256,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1240px) {
   .articloid {
     display: none;
   }
@@ -268,5 +270,17 @@ body {
   .class-input-box {
     width: 100%;
     height: 15vh;
+  }
+}
+
+@media only screen and (max-height: 750px) {
+  .section-input {
+    display: none;
+  }
+}
+
+@media only screen and (max-height: 800px) {
+  .footer-container {
+    display: none;
   }
 }
