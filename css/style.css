@@ -53,32 +53,26 @@ body {
 }
 
 .right {
-  cursor: pointer;
-  margin-top: 1rem;
+  margin-top: 0.2rem;
 }
 
-.weather-box {
+#weather-data {
+  color: #fff;
+}
+
+.weather-info {
   display: flex;
-  color: #fff;
+  justify-content: center;
 }
 
-.class-weather {
-  display: flex;
-  color: #fff;
-  font-size: 1rem;
-  cursor: pointer;
-  padding-top: 0.4rem;
+.temp {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
 }
 
-.class-temp {
-  margin-left: 0.6rem;
-  font-size: 1.6rem;
-} 
-
-.class-location {
-  color: #fff;
-  font-size: 0.9rem;
-  margin-top: 0.3rem;
+.class-city {
+  font-size: 0.85rem;
+  text-align: center;
 }
 
 /* section(above) */
