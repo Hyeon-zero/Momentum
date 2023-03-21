@@ -37,16 +37,40 @@ body {
 
 .class-links {
   margin: 1rem, 0.8rem, 0, 1rem;
-  font-size: 17px;
+  font-size: 1.15rem;
   color: #fff;
   font-weight: normal;
   cursor: pointer;
   padding-bottom: 0.7rem;
 }
 
+.inputBox {
+  display: flex;
+}
+
+#searchInput {
+  width: 13rem;
+  height: 1.6rem;
+  margin-left: 0.5rem;
+  border: none;
+  background: none;
+  border-bottom: 0.12rem solid #fff;
+}
+
+#searchInput:focus {
+  outline: none;
+  color: #fff;
+}
+
+::placeholder {
+  color: #fff;
+  font-size: 0.95rem;
+  opacity: 0.8;
+}
+
 .class-glass {
   color: #fff;
-  font-size: 1.rem;
+  font-size: 1.1rem;
   margin-left: 0.8rem;
   cursor: pointer;
   padding-top: 0.17rem;
@@ -58,6 +82,7 @@ body {
 
 #weather-data {
   color: #fff;
+  cursor: pointer;
 }
 
 .weather-info {

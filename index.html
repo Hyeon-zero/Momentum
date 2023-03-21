@@ -49,7 +49,10 @@
       <div class="head-container">
         <div class="left">
           <div class="class-links">Links</div>
-          <i class="fa-solid fa-magnifying-glass class-glass"></i>
+          <span class="inputBox">
+            <i class="fa-solid fa-magnifying-glass class-glass"></i>
+            <input type="text" id="searchInput" style="display: none;" placeholder="search..">
+          </span>
         </div>
         <div class="right">
           <div id="weather-data"></div>
@@ -109,6 +112,7 @@
     </div>
   </footer>
 
+  <script src="js/search.js"></script>
   <script src="js/clock.js"></script>
   <script src="js/weather.js"></script>
 </body>
