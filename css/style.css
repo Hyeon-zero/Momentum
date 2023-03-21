@@ -55,6 +55,7 @@ body {
   border: none;
   background: none;
   border-bottom: 0.12rem solid #fff;
+  color: #fff;
 }
 
 #searchInput:focus {
