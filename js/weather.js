@@ -1,8 +1,5 @@
-const API_KEY = '58dd561c0886647251eaacbad209b4ce';
-
 function getWeatherData(lat, lon) { // 위도, 경도 좌표를 가져와 해당 위치 날씨 정보를 가져옴
-  const API_URL = `https://api.openweathermap.org/data/2.5/weather?q=Jecheon&units=metric&appid=${API_KEY}&lang={en}`;
-  // const API_URL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${API_KEY}&lang={en}`;
+  const API_URL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${API_KEY}&lang={en}`;
 
   fetch(API_URL) // URL을 사용하여 API에 가져오기 요청
     .then(response => response.json()) // JSON 형식으로 변경
