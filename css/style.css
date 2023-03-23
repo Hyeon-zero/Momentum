@@ -88,6 +88,7 @@ body {
 
 .weather-info {
   display: flex;
+  height: 2.6rem;
   justify-content: center;
 }
 
@@ -97,7 +98,7 @@ body {
 }
 
 .class-city {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   text-align: center;
 }
 
