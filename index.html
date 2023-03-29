@@ -1,54 +1,70 @@
 <!DOCTYPE html>
 <html lang="ko">
 
-  <head>
-    <meta charset="UTF-8"/>
-    <title>Momentum</title>
-    <meta name="description" content="Momentum Project"/>
-    <meta name="keywords" content="Momentum, 모멘텀, 크롬 확장, chrome 웹 스토어"/>
-    <meta name="author" content="Hyeon Young Jang"/>
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+<head>
+  <meta charset="UTF-8" />
+  <title>Momentum</title>
+  <meta name="description" content="Momentum Project" />
+  <meta name="keywords" content="Momentum, 모멘텀, 크롬 확장, chrome 웹 스토어" />
+  <meta name="author" content="Hyeon Young Jang" />
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <!-- Open Graph (Facebook, Linkedin) -->
-    <meta porperty="og:type" content="website"/>
-    <meta propety="og:title" content="Momentum Project 입니다."/>
-    <meta propety="og:description" content="Momentum Project를 공유하는 웹페이지입니다."/>
-    <meta propety="og:image" content="img/background-img.jpg"/>
-    <meta propety="og:url" content="http://127.0.0.1:5500/index.html"/>
-    <meta propety="og:site_name" content="Momentum">
+  <!-- Open Graph (Facebook, Linkedin) -->
+  <meta porperty="og:type" content="website" />
+  <meta propety="og:title" content="Momentum Project 입니다." />
+  <meta propety="og:description" content="Momentum Project를 공유하는 웹페이지입니다." />
+  <meta propety="og:image" content="img/background-img.jpg" />
+  <meta propety="og:url" content="http://127.0.0.1:5500/index.html" />
+  <meta propety="og:site_name" content="Momentum">
 
-    <!-- twitter card (Twitter) -->
-    <meta name="twitter:card" content="summary"/>
+  <!-- twitter card (Twitter) -->
+  <meta name="twitter:card" content="summary" />
 
-    <!-- card 종류 : summary, photo, player -->
-    <meta name="twitter:title" content="Momentum Project 입니다."/>
-    <meta name="twitter:description" content="Momentum Project를 공유하는 웹페이지입니다."/>
-    <meta name="twitter:image" content="img/background-img.jpg"/>
-    <meta name="twitter:creator" content="Hyeon Young Jang"/>
+  <!-- card 종류 : summary, photo, player -->
+  <meta name="twitter:title" content="Momentum Project 입니다." />
+  <meta name="twitter:description" content="Momentum Project를 공유하는 웹페이지입니다." />
+  <meta name="twitter:image" content="img/background-img.jpg" />
+  <meta name="twitter:creator" content="Hyeon Young Jang" />
 
-    <!-- 일반적인 fabicon 설정 -->
-    <link rel="icon" href="img/cube.ico"/>
-    <!-- iPhone용 fabicon 설정 -->
-    <link rel="apple-touch-icon" href="img/cube.ico"/>
-    <!-- IE용 fabicon 설정 -->
-    <link rel="short icon" type="image/x-icon" href="img/cube.ico"/>
+  <!-- 일반적인 fabicon 설정 -->
+  <link rel="icon" href="img/cube.ico" />
+  <!-- iPhone용 fabicon 설정 -->
+  <link rel="apple-touch-icon" href="img/cube.ico" />
+  <!-- IE용 fabicon 설정 -->
+  <link rel="short icon" type="image/x-icon" href="img/cube.ico" />
 
-    <!-- CSS Reset -->
-    <link rel="stylesheet" href="css/normalize.css"/>
-    <!-- fontawesome : https://fontawesome.com/start -->
-    <script src="https://kit.fontawesome.com/1bebfb796d.js" crossorigin="anonymous"></script>
-    <!-- Spoca Han Sans Neo : https://spoqa.github.io/spoqa-han-sans/ko-KR/ -->
-    <link href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css" rel="stylesheet" type="text/css"/>
-    <link rel="stylesheet" href="css/style.css"/>
-  </head>
+  <!-- CSS Reset -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <!-- fontawesome : https://fontawesome.com/start -->
+  <script src="https://kit.fontawesome.com/1bebfb796d.js" crossorigin="anonymous"></script>
+  <!-- Spoca Han Sans Neo : https://spoqa.github.io/spoqa-han-sans/ko-KR/ -->
+  <link href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 
 <body>
   <header>
     <div class="inner">
       <div class="head-container">
         <div class="left">
-          <div class="class-links">Links</div>
+          <div class="class-links">Links
+            <div id="dropdown-id" class="dropdown-class">
+              <div class="chrome-box">
+                <i class="fa-brands fa-chrome fa-1x" style="color: #1a191a;"></i>
+                <a href="https://www.google.com" class="chrome-text" target="_blank">Chrome</a>
+              </div>
+              <div class="youtube-box">
+                <i class="fa-brands fa-youtube" style="color: #1a191a;"></i>
+                <a href="https://www.youtube.com/" class="youtube-text" target="_blank">youtube</a>
+              </div>
+              <div class="naver-box">
+                <div class="n-icon" style="color: #1a191a;" font-weight="bold">N</div>
+                <a href="https://www.naver.com" class="naver-text" target="_blank">Naver</a>
+              </div>
+            </div>
+          </div>
           <span class="inputBox">
             <i class="fa-solid fa-magnifying-glass class-glass"></i>
             <input type="text" id="searchInput" style="display: none;" placeholder="search.." autocomplete="off">
@@ -56,27 +72,27 @@
         </div>
         <div class="right">
           <div id="weather-data"></div>
+        </div>
       </div>
-    </div>
   </header>
 
   <section class="above-box">
-    <div class="center-above"></div> 
+    <div class="center-above"></div>
   </section>
 
-  <section>  
-      <div class="main-box">
-        <div class="class-clock">
-          <div class="class-time">00:00</div>
-        </div>
-        <div class="class-comment">
-          <span class="class-name">Good morning, </span>
-          <span class="name-dot">
-            <span class="user-name">Hyeon</span>
-            <span class="class-dot">.</span>
-          </span>
-        </div>
+  <section>
+    <div class="main-box">
+      <div class="class-clock">
+        <div class="class-time">00:00</div>
       </div>
+      <div class="class-comment">
+        <span class="class-name">Good morning, </span>
+        <span class="name-dot">
+          <span class="user-name">Hyeon</span>
+          <span class="class-dot">.</span>
+        </span>
+      </div>
+    </div>
   </section>
 
   <section>
@@ -103,7 +119,8 @@
           </div>
         </div>
         <div class="articloid">
-          <span class="sentence">"What you do today is important because you are exchanging a day of your life for it."</span>
+          <span class="sentence">"What you do today is important because you are exchanging a day of your life for
+            it."</span>
         </div>
         <div class="to-do-list">
           <span class="todo">Todo</span>
@@ -112,8 +129,10 @@
     </div>
   </footer>
 
+  <script src="js/link-box.js"></script>
   <script src="js/search.js"></script>
   <script src="js/clock.js"></script>
   <script src="js/weather.js"></script>
 </body>
+
 </html>
