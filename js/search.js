@@ -1,5 +1,5 @@
-const searchContainer = document.querySelector('#searchIcon');
-const searchInput = document.getElementById("searchInput");
+const searchContainer = document.querySelector('.inputBox');
+const searchInput = document.querySelector("#searchInput");
 
 searchContainer.addEventListener("mouseover", () => {
   searchInput.style.display = "block";
