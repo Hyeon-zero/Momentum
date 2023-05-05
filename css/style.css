@@ -122,6 +122,7 @@ body {
 
 .inputBox {
   display: flex;
+  position: relative;
 }
 
 #searchInput {
@@ -132,8 +133,8 @@ body {
   background: none;
   border-bottom: 0.12rem solid #fff;
   color: #fff;
-  box-shadow: 0px 1.2px 0px 0px rgba(0, 0, 0, 0.2);
   border-radius: 1.7px;
+  transition: width 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 #searchInput:focus {
@@ -168,17 +169,18 @@ body {
 
 .weather-info {
   display: flex;
+  width: 5rem;
   height: 2.6rem;
-  justify-content: center;
+  align-items: center;
 }
 
 .temp {
-  font-size: 1.5rem;
-  margin-top: 0.5rem;
+  font-size: 1.3rem;
+  margin-left: -0.4rem;
 }
 
 .class-city {
-  font-size: 0.9rem;
+  font-size: 1rem;
   text-align: center;
 }
 
@@ -333,6 +335,13 @@ body {
   color: #fff;
   cursor: pointer;
   font-size: 16px;
+}
+
+@keyframes inputBox {
+  to {
+    scale: 1;
+    opacity: 1;
+  }
 }
 
 @media only screen and (max-width: 550px) {

@@ -4,7 +4,7 @@ function getWeatherData(lat, lon) { // 위도, 경도 좌표를 가져와 해당
   fetch(API_URL) // URL을 사용하여 API에 가져오기 요청
     .then(response => response.json()) // JSON 형식으로 변경
     .then(data => {
-      const {main: { temp }, weather: [{ icon }]} = data; // JSON에서 필요한 날씨 데이터 추출
+      const { main: { temp }, weather: [{ icon }] } = data; // JSON에서 필요한 날씨 데이터 추출
       const temperature = parseInt(temp); // 온도를 정수로 바꿈
       // const { name, main: { temp }, weather: [{ icon }], sys: { country, sunrise, sunset } } = data;
       const weatherIcon = `https://openweathermap.org/img/wn/${icon}.png`; // 아이콘 이미지
@@ -13,7 +13,7 @@ function getWeatherData(lat, lon) { // 위도, 경도 좌표를 가져와 해당
       const weatherDataDiv = document.getElementById('weather-data');
       weatherDataDiv.innerHTML = `
         <div class="weather-info"> 
-          <img src="${weatherIcon}" alt="Weather icon" style="width: 3rem; height: 3rem; padding-Bottom:">
+          <img src="${weatherIcon}" alt="Weather icon" style="width: 3rem; height: 3rem;">
           <div class="temp">${temperature}°</div>
         </div>
         <div class="class-city">${regionCodes}</div>
@@ -27,7 +27,7 @@ function getLocation() { // 현재 좌표 찾는 함수
     navigator.geolocation.getCurrentPosition(position => { // 사용자의 현재 위치 좌표를 검색하여 getWeatherData()로 전달
       const { latitude, longitude } = position.coords;
       getWeatherData(latitude, longitude);
-    }, error => { 
+    }, error => {
       console.error('Error getting current position:', error); // 오류 발생시 에러 메시지 출력
     });
   } else {

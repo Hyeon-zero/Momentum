@@ -1,4 +1,4 @@
-const searchContainer = document.querySelector('.inputBox');
+const searchContainer = document.querySelector('#searchIcon');
 const searchInput = document.getElementById("searchInput");
 
 searchContainer.addEventListener("mouseover", () => {
@@ -15,7 +15,7 @@ searchInput.addEventListener("keypress", (event) => {
     const url = `https://www.google.com/search?q=${query}`; // 구글로 이동하여 검색 결과 보여줌
 
     window.location.href = url;
-    /* autocomplete="off"으로 인해 필요 없는 코드 */ 
+    /* autocomplete="off"으로 인해 필요 없는 코드 */
     // searchInput.value = '';
     // searchInput.style.color = '#fff';
   }
